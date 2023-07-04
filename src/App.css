@@ -1,0 +1,79 @@
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  /* background-color: blue; */
+  border: 3px solid #0e0e0e;
+  padding: 5px;
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: lime;
+  width: 100%;
+  border: 3px solid #0e0e0e;
+}
+
+.Header input {
+  font-size: xx-large;
+  border: none;
+  padding: 5px;
+} 
+
+.Header button {
+  height: 100%;
+  font-size: xx-large;
+  border: none;
+  padding: 5px 15px;
+}
+
+.Lists {
+  padding: 0;
+  width: 100%;
+}
+
+.Lists li {
+  display: grid;
+  grid-template-columns:auto 6fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: decimal;
+  border: 3px solid #0e0e0e;
+  border-bottom: 0;
+}
+
+.Lists li:last-child {
+  border-bottom: 3px solid #0e0e0e;
+}
+
+.Lists li button {
+  font-size: x-large ;
+  border: none;
+  padding: 5px 15px;
+}
